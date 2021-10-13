@@ -1,0 +1,413 @@
+:root {
+  --background-color: rgb(250, 243, 234);;
+  --text-color: black;
+  --primary-color: #357b70;
+  --secondary-color: rgb(214, 222, 233);
+  --button-color:#e10096;
+  --border-primary-color: grey;
+  --shadow-color: rgb(250, 209, 216);
+  --page-padding: 25px;
+  --content-font-size: 22px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+/* Styling for the whole page as everything is inside of the main body */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: var(--content-font-size);
+    /* Sets the font size to 22px */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 */
+    color: var(--text-color);
+}
+
+
+/* GENETRAL settings for the whole page */
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  a {
+    color: var(--primary-color);
+  }
+  a:visited {
+    /* visited link */
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    font-size: large;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--button-color);
+  }
+  
+  a:active {
+    /* selected link */
+    color: var(--primary-color);
+  }
+
+
+
+  button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--button-color);
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 14px;
+    border-radius: 10px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition-duration: 0.9s;
+    transition-property: opacity;
+}
+  
+
+  button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    font-size: large;
+  }
+
+
+  /* PAGE HEADER STYLING */
+  .page-header
+{
+    border: 1px solid var(--border-primary-color);
+    display: flex;
+    width: 90%;
+    padding: var(--page-padding);
+    background-color: var(--background-color);
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 3px 5px 10px var(--shadow-color);
+
+}
+.page-header__item {
+    flex: 0 1 80px;
+  }
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  /* Navigation on the top of the page styling and specifics */
+.navigation-list {
+    list-style-type: none;
+  }
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+
+
+  /* STYLING FOR MIDDLE CONTAINERS ON ALL HTML EXTENSIONS */
+.container-2, .page-footer,  .contact-container-2, .about-container-2, .input-contact, 
+ .grid-work-container{
+    border: 1px solid var(--border-primary-color);
+    width: 90%;
+    margin:auto;
+    text-align: center;
+    padding: var(--page-padding);
+    background-color: var(--background-color);
+    flex-shrink: 1;
+    box-shadow: 3px 5px 10px var(--shadow-color);
+
+}
+
+.about-me-table{
+    border: 1px solid black;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 5px 10px pink;
+
+}
+
+.container-2 img, .about-container-2 img {
+
+    border-radius: 50%;
+}
+
+.about-container-2 img{
+    float:left;
+}
+
+.container-2 {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.text-aboutme{
+    padding: 3px;
+}
+
+
+.social-media-icons {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50%;
+  border: 0.7px dashed pink;
+  background-clip: content-box;
+  padding: 2px;
+  transition: .4s;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.portofolio-picture, .page-header__logo{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50%;
+  border: 0.7px dashed pink;
+  background-clip: content-box;
+  padding: 2px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 10px;
+
+}
+
+.social-media-icons span, .page-header__logo span, .portofolio-picture span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media-icons:hover, .page-header__logo:hover, .portofolio-picture:hover {
+  padding: 15px;
+  margin-left: -5px;
+  transform: translateX(5px) rotate(360deg);
+  cursor: pointer;
+}
+
+
+.social-media-icons, .contact-info-styling {
+    padding: 1%;
+    margin: 1 auto;
+}
+
+
+
+
+/* GRID STYLING FOR WORK.HTML, WORK EXPIRIENCE PART */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+     
+  }
+
+.grid__item {
+    background-color: var(--secondary-color);
+    margin: 4px;
+    padding: 2px;
+    box-shadow: 3px 5px 10px lightgray;
+	  transition: .4s;
+  }
+  
+
+  .grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .grid__item:hover {
+    transform: scale(1.04);
+    transition: .8s;
+    cursor: pointer;
+  }
+
+
+
+
+/* PAGE FOOTER STYLING */
+  .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    box-shadow: 3px 5px 10px pink;
+
+
+}
+
+
+
+
+  /* For screens from 0px to 750px setting */
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+  /*Animating PICTURE*/
+  @keyframes color-change {
+    0% {
+      fill: #e6b31c;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+  
+  .sun {
+    animation-duration: 6s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+  /*or the same line of code, but short: animation: 4s color-change infinite alternate linear; */
+
+  }
+
+  
+  
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+  
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+
+     /* animation-duration: 30s;
+      animation-name: cloud-move;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear; */
+  }
+  
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+  
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  @keyframes example {
+    from {fill: rgba(238, 124, 249, 0.982);}
+    to {fill: rgb(96, 200, 245);}
+  }
+
+  
+
+  .tower-circle{
+    animation: 3s example infinite alternate linear;
+  }
+
+  .berlin-door{
+    animation-duration: 6s;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+
+  @keyframes grass-animation{
+    from {fill:lime}
+    to {fill:palegreen}
+  }
+
+  .grass {
+    animation: 5s grass-animation infinite alternate linear;
+  }
+
+  @keyframes statue-animation{
+    0% {
+      fill: fuchsia;
+    }
+    50% {
+      fill: skyblue;
+    }
+    100% {
+      fill:turquoise;
+    }
+  }
+
+  .statue{
+    animation: 10s statue-animation infinite alternate linear;
+  
+  }
+
+
+
+  
+  

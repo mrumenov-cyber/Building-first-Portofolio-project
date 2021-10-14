@@ -336,7 +336,6 @@ h1 {
 
 
 
-
   /* For screens from 0px to 750px setting */
   @media all and (max-width: 500px) {
     .grid {
@@ -349,6 +348,16 @@ h1 {
       -ms-grid-columns: 1fr 20px 1fr;
       grid-template-columns: 1fr 1fr;
     }
+    .berlin-illustration{
+      height:250px;
+  }
+    .page-header__item, .page-header__item:last-child {
+      text-align: left;
+    }
+    .my-name-logo{
+      font-size: 0px;
+    }
+
   }
   @media all and (max-width: 750px) {
     .grid {

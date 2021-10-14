@@ -280,7 +280,6 @@ h1 {
 
 
 
-
   /* For screens from 0px to 750px setting */
   @media all and (max-width: 500px) {
     .grid {
@@ -291,7 +290,18 @@ h1 {
     .grid {
       grid-template-columns: 1fr 1fr;
     }
-  }
+    
+    .berlin-illustration{
+        height: 250px;
+    }
+        .page-header__item, .page-header__item:last-child {
+        text-align: left;
+      }
+
+      .my-name-logo{
+        font-size: 0px;
+      }
+    }
   @media all and (max-width: 750px) {
     .grid {
       grid-gap: 10px;
@@ -303,6 +313,7 @@ h1 {
     h1 {
       font-size: 22px;
     }
+    
   }
 
 
@@ -410,8 +421,3 @@ h1 {
     animation: 10s statue-animation infinite alternate linear;
   
   }
-
-
-
-  
-  

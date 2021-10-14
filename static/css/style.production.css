@@ -178,6 +178,9 @@ h1 {
             box-shadow: 3px 5px 10px pink;
 
 }
+.about-me-font-size{
+  font-size: 30px;
+}
 
 .container-2 img, .about-container-2 img {
 
@@ -265,7 +268,7 @@ h1 {
 
 .social-media-icons, .contact-info-styling {
     padding: 1%;
-    margin: 1 auto;
+    margin: 0 auto;
 }
 
 

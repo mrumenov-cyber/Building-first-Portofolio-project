@@ -3,7 +3,7 @@
   --text-color: black;
   --primary-color: #357b70;
   --secondary-color: rgb(214, 222, 233);
-  --button-color:#e10096;
+  --button-color: #e10096;
   --border-primary-color: grey;
   --shadow-color: rgb(250, 209, 216);
   --page-padding: 25px;
@@ -13,7 +13,6 @@
 * {
     box-sizing: border-box;
   }
-  
 
 /* Styling for the whole page as everything is inside of the main body */
 body {

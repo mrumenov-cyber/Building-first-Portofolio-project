@@ -44,10 +44,12 @@ h1 {
   
   a {
     color: var(--primary-color);
+    text-decoration:none;
   }
   a:visited {
     /* visited link */
-    color: var(--primary-color);
+    text-decoration: purple;
+    color: purple;
   }
   
   a:hover {
@@ -60,7 +62,9 @@ h1 {
   
   a:active {
     /* selected link */
-    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: bolder;
+    color:(var(--button-color));
   }
 
 
@@ -167,11 +171,11 @@ h1 {
 
 .container-2 {
     display: flex;
-    border: 1px solid black;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
+    padding-bottom: 20px;
+    padding-top:20px;
 }
 
 .text-aboutme{
@@ -227,9 +231,15 @@ h1 {
 }
 
 
-.social-media-icons, .contact-info-styling {
+.social-media-icons  {
     padding: 1%;
     margin: 0 auto;
+}
+
+.contact-info-styling
+{
+  padding: 10px;
+  margin: 5px;
 }
 
 
@@ -273,8 +283,6 @@ h1 {
     flex-direction: column; 
     text-align: center;
     box-shadow: 3px 5px 10px pink;
-
-
 }
 
 
@@ -301,6 +309,7 @@ h1 {
         font-size: 0px;
       }
     }
+
   @media all and (max-width: 750px) {
     .grid {
       grid-gap: 10px;
@@ -311,8 +320,7 @@ h1 {
     }
     h1 {
       font-size: 22px;
-    }
-    
+    } 
   }
 
 

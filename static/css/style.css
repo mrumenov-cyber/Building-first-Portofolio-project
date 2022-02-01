@@ -253,7 +253,7 @@ h1 {
 /* GRID STYLING FOR WORK.HTML, WORK EXPIRIENCE PART */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px; 
   }
 .grid__item {
@@ -264,8 +264,8 @@ h1 {
 	  transition: .4s;
   }
   .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
   }
   .grid__item:hover {
     transform: scale(1.04);

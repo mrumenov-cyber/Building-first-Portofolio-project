@@ -295,7 +295,7 @@ h1 {
         height: 250px;
     }
         .page-header__item, .page-header__item:last-child {
-        text-align: left;
+        text-align: right;
       }
 
       .my-name-logo{

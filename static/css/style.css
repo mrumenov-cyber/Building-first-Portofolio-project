@@ -285,6 +285,9 @@ h1 {
     .grid {
       grid-template-columns: 1fr;
     }
+    .my-name-logo{
+      font-size: 0px;
+    }
   }
   @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
@@ -297,7 +300,6 @@ h1 {
         .page-header__item, .page-header__item:last-child {
         text-align: right;
       }
-
       .my-name-logo{
         font-size: 0px;
       }

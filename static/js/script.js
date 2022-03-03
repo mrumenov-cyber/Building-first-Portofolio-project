@@ -6,7 +6,7 @@ console.log("Hi, welcome to my portfolio.");
 function SubmissonSuccess()
 {
     alert("Submisson Success. Thank you for submitting your Contact information.");
-    window.location.href ='Contact.html';
+    window.location.href ='contact.html';
 }
 
 //current year in the footer

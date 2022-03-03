@@ -129,7 +129,10 @@ h1 {
     padding: var(--page-padding);
     background-color: var(--background-color);
     flex-shrink: 1;
-    box-shadow: 3px 5px 10px var(--shadow-color);
+    box-shadow: 3px 5px 10px var(--shadow-color)
+}
+.container-2{
+  padding-bottom:20px;
 }
 .skills {
   width:500px;

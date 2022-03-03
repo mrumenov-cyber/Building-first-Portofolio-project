@@ -57,6 +57,13 @@ h1 {
     font-weight: bolder;
     color:#e10096;
   }
+  #copyright {
+    font-size: 0.7rem;
+    margin-top: 20px;
+  }
+  #full-stack{
+    font-size: 1rem;
+  }
   button {
     /* overwrites browser defaults and resets the border */
     border: none;
@@ -98,7 +105,7 @@ h1 {
   }
 .page-header__item:last-child {
     flex-grow: 1;
-    text-align: right;
+    
   }
   /* Navigation on the top of the page styling and specifics */
 .navigation-list {
@@ -108,9 +115,14 @@ h1 {
     display: inline-block;
     margin-left: 15px;
   }
+  .navbar{
+   justify-content: right;
+   justify-items: right;
+  }
   /* STYLING FOR MIDDLE CONTAINERS ON ALL HTML EXTENSIONS */
 .container-2, .page-footer,  .contact-container-2, .about-container-2, .input-contact, 
  .grid-work-container{
+   
     width: 90%;
     margin:auto;
     text-align: center;
@@ -266,7 +278,7 @@ h1 {
     padding: 2px;
     box-shadow: 3px 5px 10px lightgray;
 	  transition: .4s;
-    padding:5px;
+    padding:10px;
     padding-bottom: 10px;
   }
 

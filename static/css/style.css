@@ -196,8 +196,8 @@ h1 {
 }
 
 .about-me{
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .container-2 img, .about-container-2 img {
 
@@ -230,7 +230,7 @@ h1 {
   margin-right: 3px;
   font-size: 10px;
 }
-.portofolio-picture, .page-header__logo{
+.portofolio-picture, .page-header__logo {
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -284,7 +284,6 @@ h1 {
     padding:10px;
     padding-bottom: 10px;
   }
-
   .grid__item:hover {
     transform: scale(1.04);
     transition: .8s;
@@ -311,7 +310,6 @@ h1 {
     .grid {
       grid-template-columns: 1fr;
     }
-    
     .berlin-illustration{
         height: 250px;
     }
@@ -360,7 +358,6 @@ h1 {
   }
   .cloud-front {
     animation: 30s cloud-move infinite alternate linear;
-
      /* animation-duration: 30s;
       animation-name: cloud-move;
       animation-iteration-count: infinite;

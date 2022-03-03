@@ -5,7 +5,7 @@ console.log("Hi, welcome to my portfolio.");
 
 function SubmissonSuccess()
 {
-    alert("Submisson Success. Thank you for submitting your Contact information.");
+    alert("Submisson was not a Success. Please email me diectly, or try again later.");
     window.location.href ='contact.html';
 }
 

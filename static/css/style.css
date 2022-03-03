@@ -85,7 +85,6 @@ h1 {
   /* PAGE HEADER STYLING */
   .page-header
 {
-    border: 1px solid var(--border-primary-color);
     display: flex;
     width: 90%;
     padding: var(--page-padding);
@@ -112,7 +111,6 @@ h1 {
   /* STYLING FOR MIDDLE CONTAINERS ON ALL HTML EXTENSIONS */
 .container-2, .page-footer,  .contact-container-2, .about-container-2, .input-contact, 
  .grid-work-container{
-    border: 1px solid var(--border-primary-color);
     width: 90%;
     margin:auto;
     text-align: center;

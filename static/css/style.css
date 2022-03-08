@@ -144,29 +144,42 @@ h1 {
 .bar{
   background-color: white;
   display: block;
-  height:2px;
+  height:15px;
   border:3px solid royalblue;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 0 10px skyblue;
 }
 .bar span{
-  height: 3px;
+  height: 13px;
   float: left;
-  background: black;
+  background: skyblue;
 }
 .html{
   width: 90%;
-  animation: html 2s;
+  animation: html 3s;
 }
 .css{
-  width: 70%;
-  animation: css 2s;
+  width: 85%;
+  animation: css 3s;
 }
 .javascript{
-  width: 50%;
-  animation: javascript 2s;
+  width: 65%;
+  animation: javascript 3s;
 }
+.react {
+  width: 60%;
+  animation: react 3s;
+}
+.react-native {
+  width: 50%;
+  animation: react-native 3s;
+}
+.angular {
+  width: 60%;
+  animation: angular 3s;
+}
+
 @keyframes html{
   0%{
     width:0%;
@@ -180,7 +193,7 @@ h1 {
       width: 0%;
     }
     100%{
-      width: 90%;
+      width: 85%;
     }
   }
     @keyframes javascript{
@@ -188,8 +201,32 @@ h1 {
         width: 0%;
       }
       100%{
-        width: 50%;
+        width: 65%;
       }
+  }
+  @keyframes react{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:60%;
+    }
+  }
+  @keyframes react-native{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:50%;
+    }
+  }
+  @keyframes angular{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:60%;
+    }
   }
 .about-me-font-size{
   font-size: 30px;
@@ -289,6 +326,11 @@ h1 {
     transition: .8s;
     cursor: pointer;
   }
+  .grid__item > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
 /* PAGE FOOTER STYLING */
   .page-footer {
     clear: both;
@@ -305,6 +347,13 @@ h1 {
     .my-name-logo{
       font-size: 0px;
     }
+    .skills {
+      width:150px;
+      margin: 20px auto;
+    }
+    .skills li{
+      margin:5px 0;
+    }
   }
   @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
@@ -318,6 +367,13 @@ h1 {
       }
       .my-name-logo{
         font-size: 0px;
+      }
+      .skills {
+        width:300px;
+        margin: 40px auto;
+      }
+      .skills li{
+        margin:10px 0;
       }
   }
   @media all and (max-width: 750px) {

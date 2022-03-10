@@ -357,12 +357,9 @@ h1 {
       margin:5px 0;
     }
   }
-  @media all and (min-width: 500px) and (max-width: 750px){
+  @media all and (min-width: 200px) and (max-width: 750px){
     .grid {
       grid-template-columns: 1fr;
-    }
-    .berlin-illustration{
-        height: 250px;
     }
         .page-header__item, .page-header__item:last-child {
         text-align: right;
@@ -377,6 +374,25 @@ h1 {
       .skills li{
         margin:10px 0;
       }
+      /* GENETRAL settings for the whole page */
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: 300;
+      }
+      p{
+        font-size: 12px;
+      }
+      .about-me-font-size{
+        font-size: 12px;
+      }
   }
   @media all and (max-width: 750px) {
     .grid {
@@ -386,86 +402,4 @@ h1 {
       font-size: 22px;
     } 
   }
-  /*Animating PICTURE*/
-  @keyframes color-change {
-    0% {
-      fill: #e6b31c;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
-  }
-  .sun {
-    animation-duration: 6s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  /*or the same line of code, but short: animation: 4s color-change infinite alternate linear; */
-  }
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-     /* animation-duration: 30s;
-      animation-name: cloud-move;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: linear; */
-  }
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-  @keyframes example {
-    from {fill: rgba(238, 124, 249, 0.982);}
-    to {fill: rgb(96, 200, 245);}
-  }
-  .tower-circle{
-    animation: 3s example infinite alternate linear;
-  }
-  .berlin-door{
-    animation-duration: 6s;
-    animation-name: example;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  @keyframes grass-animation{
-    from {fill:lime}
-    to {fill:palegreen}
-  }
-  .grass {
-    animation: 5s grass-animation infinite alternate linear;
-  }
-  @keyframes statue-animation{
-    0% {
-      fill: fuchsia;
-    }
-    50% {
-      fill: skyblue;
-    }
-    100% {
-      fill:turquoise;
-    }
-  }
-  .statue{
-    animation: 10s statue-animation infinite alternate linear;
-  
-  }
+ 

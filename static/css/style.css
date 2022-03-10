@@ -396,6 +396,10 @@ h1 {
       .a{
         font-size: 18px;
       }
+      .about-me{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
   }
   @media all and (max-width: 750px) {
     .grid {

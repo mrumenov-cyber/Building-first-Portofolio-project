@@ -6,7 +6,7 @@ console.log("Hi, welcome to my portfolio.");
 function SubmissonSuccess()
 {
     alert("Submisson was Not a Success. Please email me diectly, or try again later.");
-    window.location.href ='contact.html';
+    window.location.href ='index.html';
 }
 
 //current year in the footer

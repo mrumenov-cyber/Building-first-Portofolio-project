@@ -285,19 +285,20 @@
            <br>
             <br>
             <div class="input-contact">
-                <form method="post">
+                <form action="https://formsubmit.co/marija.rumenov@gmail.com" method="POST">
                     <p>If you want me get in touch with you, you can also leave me your contact information:</p>
                     <label class="contact-info-styling" id="email">E-mail *:</label>
-                    <input class="contact-info-styling" type="email" required="required">
+                    <input class="contact-info-styling" type="email" required="required" name="email">
                     <br>
                     <label class="contact-info-styling" id="tel">Phone *: </label>
-                    <input class="contact-info-styling" type="tel" required>
+                    <input class="contact-info-styling" type="tel" name="message" required>
                     <br>
                     <label class="contact-info-styling" id="my-input">Message:</label>
-                    <textarea class="contact-info-styling" maxlength="240" cols="20" rows="5"></textarea>
+                    <textarea class="contact-info-styling" maxlength="240" cols="20" rows="5" name="subject"></textarea>
                     <br>
                     <br>
                     <div><button class="btn btn-primary" onclick="SubmissonSuccess()" ><strong>Submit</strong></button></div>
+                    <input type="hidden" name="_next" value="https://mrumenov-cyber.github.io/Personal-Portfolio/thankyou.html">
                     <br>
                 </form>
     </div> 

@@ -10,4 +10,4 @@
 - JavaScript
 
 # Demo link to Marija Rumenovic portofolio page: 
-- https://mrumenov-cyber.github.io/Building-first-Portofolio-project/ContactMarijaRumenovic.html
+- https://mrumenov-cyber.github.io/Personal-Portfolio

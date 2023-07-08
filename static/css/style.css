@@ -169,8 +169,12 @@ h1 {
   width: 65%;
   animation: javascript 3s;
 }
+.jQuery{
+  width: 75%;
+  animation: jquery 3s;
+}
 .react {
-  width: 60%;
+  width: 80%;
   animation: react 3s;
 }
 .react-native {
@@ -181,6 +185,11 @@ h1 {
   width: 60%;
   animation: angular 3s;
 }
+.php {
+  width: 70%;
+  animation: php 3s;
+}
+
 
 @keyframes html{
   0%{
